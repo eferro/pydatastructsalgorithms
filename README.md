@@ -1,1 +1,1 @@
-# datestructsalgotrithms
+# pydatastructsalgorithms
