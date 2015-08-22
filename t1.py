@@ -11,12 +11,25 @@ from pydatastructsalgorithms import tree
 # print(tree.get_right_child(tree.get_right_child(r)))
 
 
-x = tree.binary_tree('a')
-tree.insert_left(x, 'b')
-tree.insert_right(x, 'c')
-print x
+# x = tree.binary_tree('a')
+# tree.insert_left(x, 'b')
+# tree.insert_right(x, 'c')
+# print x
 
-tree.insert_right(tree.get_right_child(x), 'd')
-print x
-tree.insert_left(tree.get_right_child(tree.get_right_child(x)), 'e')
-print x
+# tree.insert_right(tree.get_right_child(x), 'd')
+# print x
+# tree.insert_left(tree.get_right_child(tree.get_right_child(x)), 'e')
+# print x
+
+
+def build_tree():
+	r = tree.binary_tree('a')
+	tree.insert_left(r, 'b')
+	tree.insert_right(r, 'c')
+	tree.insert_right(tree.get_left_child(r), 'd')
+	tree.insert_left(tree.get_right_child(r), 'e')
+	tree.insert_right(tree.get_right_child(r), 'f')
+	return r
+
+
+print build_tree()
