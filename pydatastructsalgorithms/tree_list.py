@@ -1,7 +1,5 @@
 
 
-
-
 def binary_tree(root):
 	return [root, [], []]
 

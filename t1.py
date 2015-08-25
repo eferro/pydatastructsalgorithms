@@ -1,4 +1,4 @@
-from pydatastructsalgorithms import tree
+from pydatastructsalgorithms import tree_list as tree
 
 # r = tree.binary_tree(3)
 # tree.insert_left(r, 4)
