@@ -16,10 +16,15 @@ from pydatastructsalgorithms import tree_class as tree
 
 r = tree.BinaryTree('a')
 r.insert_left('b')
-r.get_left_child().insert_right('b')
+r.get_left_child().insert_right('d')
 r.insert_right('c')
 r.get_right_child().insert_left('e')
 r.get_right_child().insert_right('f')
 
 print r
 
+print "preorder"
+tree.preorder(r)
+
+print "inorder"
+tree.inorder(r)
